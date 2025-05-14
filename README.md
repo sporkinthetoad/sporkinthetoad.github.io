@@ -1,6 +1,6 @@
 # sporkinthetoad.github.io
 
->this is a website:
+>this is the website:
 >
 >[sporkinthetoad.github.io](https://sporkinthetoad.github.io/)
 >
