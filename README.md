@@ -2,7 +2,7 @@
 
 >this is a website:
 >
->[sporkinthetoad.github.io]
+>[sporkinthetoad.github.io](sporkinthetoad.github.io)
 >
 >that is all
 >
