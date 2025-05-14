@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800 text-white">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-slate-700 shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold">Name Pending</a>
+      <div class="space-x-6">
+        <a href="index.html" class="text-white hover:text-indigo-200">Home</a>
+        <a href="coming_soon.html" class="text-white hover:text-indigo-200">coming_soon</a>
+        <a href="coming_soon.html" class="text-white hover:text-indigo-200">coming_soon</a>
+        <a href="coming_soon.html" class="text-white hover:text-indigo-200">coming_soon</a>
+        <a href="coming_soon.html" class="text-white hover:text-indigo-200">coming_soon</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="text-center mt-10">
+    <h1 class="text-2xl mb-4">cant be bothered to sort out a home page</h1>
+    <h1>if you would like a homepage please submit an idea to the suggestion box.</h1>
+    <h1>i will do my best to implement every one</h1>
+  </div>
+
+  <div class="mt-20 max-w-xl mx-auto text-center bg-slate-700 rounded-2xl p-8 shadow-md text-black">
+    <h2 class="text-white text-2xl font-bold mb-4">Suggestion Box</h2>
+    <p class="text-slate-300 mb-6">where dreams go to die</p>
+
+    <form action="https://formspree.io/f/mldjabrw" method="POST" id="suggestion-form" class="flex flex-col sm:flex-row gap-4">
+      <input 
+        type="text" 
+        id="suggestion-input"
+        name="suggestion" 
+        placeholder="" 
+        required
+        class="flex-grow px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      >
+      <button 
+        type="submit" 
+        class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-2 rounded-lg transition">
+        Submit
+      </button>
+    </form>
+
+  </div>
+
+</body>
+</html>
