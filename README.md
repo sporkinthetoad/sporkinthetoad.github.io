@@ -1,6 +1,6 @@
 # sporkinthetoad.github.io
-
->this is the website:
+>archived the original cause it looked dishonest. working on a remake
+>this is the website(currently does not work):
 >
 >[sporkinthetoad.github.io](https://sporkinthetoad.github.io/)
 >
