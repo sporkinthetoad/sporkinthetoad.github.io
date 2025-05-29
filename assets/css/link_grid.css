@@ -1,0 +1,32 @@
+.link-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr ));
+		gap: 20px;
+		list-style-type: disc;
+		padding-left: 20px;
+		max-width: 100%;
+		margin: auto;
+    }
+
+    .link-grid li {
+		padding: 10px;
+    }
+
+    .link-grid a {
+		text-decoration: none;
+		color: #0077cc;
+		font-weight: bold;
+    }
+	
+	.link-grid a:visited {
+		color: #CE3131;
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+    .link-grid a:hover {
+		text-decoration: underline;
+		color: #FFFF51;
+    }
+	
+	

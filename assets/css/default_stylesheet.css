@@ -26,26 +26,32 @@ hr {
 	
 }
 
+
 .suggestionbox {
 	color: inherit;
 	position: absolute;
 	right: 0;
 	top: 0;
-	padding: 10px;
-	
-	
+	padding: 10px;	
 }
 
-.footer {
+
+.warning {
 	position: absolute;
-	bottom: 0;
-	padding: 10px;
+	top: 0;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 750px;
+	background-attachment: scroll;
 }
+
 
 .dark-mode {
 	background-color: black;
     color: black;
+	position: fixed
 }
+
 
 .dark-mode input,
 .dark-mode button,
@@ -53,11 +59,12 @@ hr {
 .dark-mode .blunderline
 .dark-mode .runderline
 .dark-mode {
-  color: black;
-  background-color: black;
-  border-color: black;
-  text-decoration: none
+	color: black;
+	background-color: black;
+	border-color: black;
+	text-decoration: none
 }
+
 
 .runderline {
 	text-decoration-line: underline;
@@ -65,9 +72,37 @@ hr {
 	text-decoration-color: red;
 }
 
+
 .blunderline {
 	text-decoration-line: underline;
 	text-decoration-style: wavy;
 	text-decoration-color: blue;
 }
 
+
+.true-center {
+	padding: 70px 0;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+	
+	.true-center h1 {
+		font-size: 6rem;
+		margin-bottom: 20px;
+    }
+	
+	.true-center a {
+		color: #0077cc;
+		text-decoration: none;
+		font-size: 1.2rem;
+    }
+	
+	.true-center a:visited {
+		color: #CE3131;
+	}
+	
+	.true-center a:hover {
+		color: #FFFF51;
+		text-decoration: underline;
+    }
