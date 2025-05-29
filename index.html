@@ -1,5 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>sporkinthetoad</title>
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+<link rel="stylesheet" href="assets/css/default_stylesheet.css">
+<script>
+    if (Math.random() < (1/33000000)) {
+      alert("you have been struck by lightning");
+    }
+  </script>
 </head>
+
+<body>
+<h1>sporkinthetoad.github.io</h1>
+
+<div class = 'suggestionbox'>
+	<p>Suggestion Box - where dreams go to die</p>
+	<form action='https://formspree.io/f/mldjabrw' method='POST'>
+      <input 
+        type="text" 
+        id="suggestion-input"
+        name="suggestion" 
+        placeholder="" 
+        required
+      >
+      
+        <button>
+        submit anything idc
+		</button>
+	</form>
+</div>
+
+<hr>
+<p>welcome to the dump</p>
+<p>have fun<p>
+<hr>
+
+<button onclick="darkMode()">
+enable dark mode
+</button>
+
+<script>
+function darkMode() {
+   var element = document.body;
+   element.classList.add('dark-mode');
+   var element = document.querySelector('.blunderline');
+   element.classList.remove('blunderline');
+   var element = document.querySelector('.runderline');
+   element.classList.remove('runderline');
+   var element = document.querySelector('.runderline');
+   element.classList.remove('runderline');
+}
+</script>  
+
+
+
+</body>
+
+<footer class = 'footer'>
+<h1><span class = 'blunderline'>i</span> hate <span class = 'runderline'>formspree</span> but can't be bothered to change it yet so the suggestion box will still <span class = 'runderline'>cringefully</span> redirect.</h1>
+</footer>
+
+</html>
