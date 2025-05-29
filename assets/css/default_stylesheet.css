@@ -28,6 +28,10 @@ a:hover {
 	color: #FFFF51;
 }
 
+li {
+	font-size: 1.5rem
+}
+
 input {
 	color: inherit;
 }
