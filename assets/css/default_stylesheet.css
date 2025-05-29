@@ -7,7 +7,6 @@ body {
 h1 {
 	color: inherit;
 	font-size: 2.8rem;
-	max-width: 55%
 }
 
 p {
@@ -58,9 +57,14 @@ hr {
 	right: 0;
 	top: 0;
 	padding: 10px;	
-	max-width: 40%
 }
 
+@media (max-width: 1000px) {
+	.suggestionbox {
+		max-width: 100%;
+		position: static
+	}
+}
 
 .warning {
 	text-align: center;
