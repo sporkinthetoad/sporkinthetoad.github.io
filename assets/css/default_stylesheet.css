@@ -37,24 +37,49 @@ hr {
 
 
 .warning {
-	position: absolute;
 	text-align: left;
-	background-attachment: scroll;
 }
+
+.link-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr ));
+		gap: 20px;
+		list-style-type: disc;
+		padding-left: 20px;
+		max-width: 100%;
+		margin: auto;
+    }
+
+    .link-grid li {
+		padding: 10px;
+    }
+
+    .link-grid a {
+		color: #CE3131;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	
+	
+
+    .link-grid a:hover {
+		text-decoration: underline;
+		color: #FFFF51;
+    }
 
 
 .dark-mode {
 	background-color: black;
     color: black;
-	position: fixed
 }
 
 
 .dark-mode input,
 .dark-mode button,
 .dark-mode hr,
-.dark-mode .blunderline
-.dark-mode .runderline
+.dark-mode .blunderline,
+.dark-mode .runderline,
+.dark-mode .link-grid a,
 .dark-mode {
 	color: black;
 	background-color: black;
