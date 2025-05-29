@@ -33,7 +33,7 @@ li {
 }
 
 input {
-	color: inherit;
+	color: black;
 }
 
 button {
@@ -44,6 +44,12 @@ hr {
 	
 }
 
+.tier-image {
+	text-align: left;
+	left: 0;
+	width: 570;
+	height:277;
+}
 
 .suggestionbox {
 	color: inherit;
