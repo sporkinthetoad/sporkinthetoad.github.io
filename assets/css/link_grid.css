@@ -11,14 +11,8 @@
     .link-grid li {
 		padding: 10px;
     }
-
-    .link-grid a {
-		text-decoration: none;
-		color: #0077cc;
-		font-weight: bold;
-    }
 	
-	.link-grid a:visited {
+	.link-grid a:{
 		color: #CE3131;
 		background-color: transparent;
 		text-decoration: none;
