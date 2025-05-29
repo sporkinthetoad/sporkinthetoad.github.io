@@ -62,7 +62,8 @@ hr {
 @media (max-width: 1000px) {
 	.suggestionbox {
 		max-width: 100%;
-		position: static
+		position: static;
+		padding: none
 	}
 }
 
