@@ -172,3 +172,7 @@ hr {
 		color: #FFFF51;
 		text-decoration: underline;
     }
+	
+.embedded-text-class {
+	font-size: 1rem
+}
