@@ -10,8 +10,22 @@ h1 {
 }
 
 p {
+	
 	color: inherit;
 	font-size: 1.25rem
+}
+
+a {
+	color: #CE3131;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+
+
+a:hover {
+	text-decoration: underline;
+	color: #FFFF51;
 }
 
 input {
