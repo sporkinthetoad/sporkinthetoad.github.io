@@ -51,16 +51,17 @@ hr {
 
 
 .warning {
-	text-align: left;
+	text-align: center;
 }
 
 .link-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr ));
+		
+		grid-template-columns: repeat(3, 1fr );
 		gap: 20px;
 		list-style-type: disc;
 		padding-left: 20px;
-		max-width: 100%;
+		max-width: 40%;
 		margin: auto;
     }
 
@@ -72,6 +73,7 @@ hr {
 		color: #CE3131;
 		background-color: transparent;
 		text-decoration: none;
+		text-align: center
 	}
 	
 	
@@ -81,6 +83,17 @@ hr {
 		color: #FFFF51;
     }
 
+	@media (max-width: 768px) {
+		  .link-grid {
+			grid-template-columns: repeat(2, 1fr);
+		  }
+	}
+
+    @media (max-width: 480px) {
+      .link-grid {
+        grid-template-columns: 1fr;
+	}
+}
 
 .dark-mode {
 	background-color: black;
