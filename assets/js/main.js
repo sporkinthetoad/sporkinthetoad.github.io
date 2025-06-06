@@ -1,13 +1,13 @@
 
 
-<script>
-    if (Math.random() < (1/33000000)) {
-      alert("you have been struck by lightning");
-    }
-</script>
+
+if (Math.random() < (1/33000000)) {
+	alert("you have been struck by lightning");
+   }
 
 
-<script>
+
+
 function darkMode() {
    var element = document.body;
    element.classList.add('dark-mode');
@@ -17,9 +17,9 @@ function darkMode() {
    element.classList.remove('runderline');
    
 }
-</script>    
+ 
 
-<script>
+
 let bouncing = false;
 let challengeBegin = true;
 let loopNum = 0;
@@ -74,4 +74,3 @@ function disableChallengeMode() {
 	}
 }
 
-</script>
