@@ -33,12 +33,20 @@
 </div>
 
 <hr>
-<p>welcome to the dump</p>
+<p>welcome</p>
 <p>have fun</p>
 <hr>
 
 <button onclick="darkMode()">
 enable dark mode
+</button>
+
+<button onclick = 'challengeMode()'>
+enable challenge mode
+</button>
+
+<button onclick = 'disableChallengeMode()';>
+disable challenge mode
 </button>
 
 <span class = 'warning'><h2>(<span class = 'blunderline'>i</span> hate <span class = 'runderline'>formspree</span> but can't be bothered to change it yet so the suggestion box will still <span class = 'runderline'>cringefully</span> redirect.)</h2></span>
@@ -47,7 +55,7 @@ enable dark mode
 <div class="link-grid">
 	<a href="/things-i-hate/">Things i Hate</a>
 	<a href="/tierlists/">Tierlists</a>
-	<a href="/coming-soon/">Link Three</a>
+	<a href="/coming-soon/">Cash in the Trash</a>
 	<a href="/coming-soon/">Link Four</a>
 	<a href="/coming-soon/">Link Five</a>
 	<a href="/coming-soon/">Link Six</a>
@@ -60,16 +68,58 @@ enable dark mode
 function darkMode() {
    var element = document.body;
    element.classList.add('dark-mode');
-   var element = document.querySelector('.blunderline');
+   var element = document.querySelectorAll('.blunderline');
    element.classList.remove('blunderline');
-   var element = document.querySelector('.runderline');
-   element.classList.remove('runderline');
-   var element = document.querySelector('.runderline');
+   var element = document.querySelectorAll('.runderline');
    element.classList.remove('runderline');
 }
 </script>  
 
+<script>
+let bouncing = false;
+let challengeBegin = true;
+let loopNum = 7
 
+function challengeMode() {
+
+	const links = document.querySelectorAll('a');
+	const pos = [];
+	bouncing = true;
+	
+	function posRand() {
+		links.forEach((link) => {
+		link.style.position = "absolute"; // Required for manual positioning
+
+		// Random start position within screen bounds
+		link.style.left = Math.random() * (window.innerWidth - link.offsetWidth) + "px";
+		link.style.top = Math.random() * (window.innerHeight - link.offsetHeight) + "px";
+
+	});
+	}
+	
+	function oneToTen() {
+		loopNum = Math.floor(Math.random() * 11);
+		
+		if (loopNum >= 9) {
+			posRand();
+		}
+		
+		if (challengeBegin) {
+			setTimeout(oneToTen, 100);
+		}
+		
+	}
+	
+	oneToTen();
+}
+
+function disableChallengeMode() {
+	if (bouncing){
+		alert("the gods help those who help themselves");
+	}
+}
+
+</script>
 
 </body>
 
