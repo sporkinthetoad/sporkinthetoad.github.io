@@ -72,7 +72,6 @@ function darkMode() {
    element.classList.remove('blunderline');
    var element = document.querySelectorAll('.runderline');
    element.classList.remove('runderline');
-   button.style.opacity = 0;
    
 }
 </script>  
@@ -89,9 +88,8 @@ function challengeMode() {
 
 	function posRand() {
 		links.forEach((link) => {
-		link.style.position = "absolute"; // Required for manual positioning
+		link.style.position = "absolute";
 		
-		// Random start position within screen bounds
 		link.style.left = Math.random() * (window.innerWidth - link.offsetWidth) + "px";
 		link.style.top = Math.random() * (window.innerHeight - link.offsetHeight) + "px";
 
