@@ -56,7 +56,7 @@ disable challenge mode
 	<a href="/things-i-hate/">Things i Hate</a>
 	<a href="/tierlists/">Tierlists</a>
 	<a href="/coming-soon/">Cash in the Trash</a>
-	<a href="/coming-soon/">Link Four</a>
+	<a href="/coming-soon/">Placeholer</a>
 	<a href="/coming-soon/">Link Five</a>
 	<a href="/coming-soon/">Link Six</a>
 	<a href="/coming-soon/">Link Seven</a>
@@ -72,24 +72,25 @@ function darkMode() {
    element.classList.remove('blunderline');
    var element = document.querySelectorAll('.runderline');
    element.classList.remove('runderline');
+   button.style.opacity = 0;
+   
 }
 </script>  
 
 <script>
 let bouncing = false;
 let challengeBegin = true;
-let loopNum = 7
+let loopNum = 0;
 
 function challengeMode() {
-
+	bouncing = true;
 	const links = document.querySelectorAll('a');
 	const pos = [];
-	bouncing = true;
-	
+
 	function posRand() {
 		links.forEach((link) => {
 		link.style.position = "absolute"; // Required for manual positioning
-
+		
 		// Random start position within screen bounds
 		link.style.left = Math.random() * (window.innerWidth - link.offsetWidth) + "px";
 		link.style.top = Math.random() * (window.innerHeight - link.offsetHeight) + "px";
@@ -99,12 +100,25 @@ function challengeMode() {
 	
 	function oneToTen() {
 		loopNum = Math.floor(Math.random() * 11);
+		const buttons = document.querySelectorAll('button');
 		
-		if (loopNum >= 9) {
+		if (loopNum <= 1) {
 			posRand();
+			buttons.forEach(btn => {
+            btn.style.opacity = 1;
+			
+        });
 		}
 		
+	function btnHide() {
+		buttons.forEach(btn => {
+            btn.style.opacity = 0;
+			
+        });
+	}
+		
 		if (challengeBegin) {
+			setTimeout(btnHide, 100);
 			setTimeout(oneToTen, 100);
 		}
 		
