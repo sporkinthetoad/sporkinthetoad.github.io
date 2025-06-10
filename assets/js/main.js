@@ -43,7 +43,7 @@ function challengeMode() {
 		loopNum = Math.floor(Math.random() * 11);
 		const buttons = document.querySelectorAll('button');
 		
-		if (loopNum <= 1) {
+		if (loopNum <= 2) {
 			posRand();
 			buttons.forEach(btn => {
             btn.style.opacity = 0;
