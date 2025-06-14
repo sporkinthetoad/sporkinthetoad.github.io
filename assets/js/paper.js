@@ -11,7 +11,7 @@ async function weather() {
 }
 
 async function haywire() {
-  return Math.random() < (0.02054794522 + 0.0002746) / 100; // chance of technology going haywire 
+  return Math.random() < (0.02054794522 + 0.0002746) / 100; // chance of technology going haywire
 }
 
 async function generate() {
@@ -23,39 +23,31 @@ async function generate() {
 
   headline.textContent = `${weathertext} day in big city London`;
 
-  if (chaos) {
-    subheadline.textContent = "chaos in the streets as technology goes haywire";
-  } else {
-    subheadline.textContent = "streets as usual";
-  }
+  subheadline.textContent = chaos
+    ? "chaos in the streets as technology goes haywire"
+    : "streets as usual";
 }
 
 generate();
 
-
-
 function tabloid() {
-    var status = document.getElementById("status");
-    const elements = document.getElementsByClassName("stretched");
-    for (let i of elements) {
-        i.style.letterSpacing = "-3px";
-        status.textContent = "page status: tabloid"
-    }
-    
+  const status = document.getElementById("status");
+  const elements = document.getElementsByClassName("stretched");
+  for (let i of elements) {
+    i.style.letterSpacing = "-3px";
+    status.textContent = "page status: tabloid";
+  }
 }
 
-function broadsheet(){
-    const elements = document.getElementsByClassName("stretched");
-    let status = document.getElementById("status");
-    for (let i of elements) {
-        
-        i.style.letterSpacing = "0px"
-        const natural_text_width = i.getBoundingClientRect().width
+function broadsheet() {
+  const elements = document.getElementsByClassName("stretched");
+  const status = document.getElementById("status");
+  for (let i of elements) {
+    i.style.letterSpacing = "0px";
+    const natural_text_width = i.getBoundingClientRect().width;
 
-        let spacing = (window.innerWidth - natural_text_width) / 2;
-        i.style.letterSpacing = spacing + "px";
-        status.textContent = "page status: broadsheet"
-    }
-    
+    let spacing = (window.innerWidth - natural_text_width) / 2;
+    i.style.letterSpacing = spacing + "px";
+    status.textContent = "page status: broadsheet";
+  }
 }
-
