@@ -6,6 +6,7 @@ async function weather() {
 
   if (data.main.temp < 10) return "Cold";
   if (data.main.temp < 13) return "Lukecold";
+  if (data.main.temp === 16) return "";
   if (data.main.temp < 16) return "Lukewarm";
   if (data.main.temp > 16) return "Warm";
 }
