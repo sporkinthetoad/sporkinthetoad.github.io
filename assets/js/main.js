@@ -66,6 +66,7 @@ function challengeMode() {
 	}
 	
 	oneToTen();
+
 }
 
 function disableChallengeMode() {

@@ -37,7 +37,9 @@ input {
 }
 
 button {
-	color: black
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: black;
 }
 
 hr {
@@ -102,7 +104,7 @@ hr {
 
 	@media (max-width: 768px) {
 		  .link-grid {
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: 1fr;
 		  }
 	}
 

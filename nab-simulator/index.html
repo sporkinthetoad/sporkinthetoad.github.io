@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Nab Simulator</title>
+
+<link rel="icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
+<link rel="stylesheet" href="../assets/css/default_stylesheet.css">
+<link rel="stylesheet" href="assets/css/nab_stylesheet.css">
+<script src="assets/js/nab.js" defer></script>
+
+</head>
+
+<body>
+    <h1>Nab Simulator - proof of concept</h1>
+    <!-- main menu -->
+    <div id = "mainMenu">
+        <a href = assets/devlog.html>Dev Log</a>
+        <br>
+        <button id = "startBtn">start game</button>
+    </div>
+
+    <!-- stats -->
+    <div id = "stats">
+        <h2>Treasure Caught: <span id="trashCount">0</span></h2>
+        <h2>Cash: <span id="cashCount">0</span></h2>
+    </div>
+
+    <!-- game menu(main window) -->
+    <div id = "gameMenu">
+        <button id="trashBtn">catch a treasure</button>
+        <br>
+        <button id="sellBtn">sell treasure</button>
+        <br>
+        <button id="upgradeBtn">upgrade</button>
+    </div>
+
+    <!-- upgrade menu -->
+    <div id = "upgradeMenu">
+        <h2>Upgrades:</h2>
+
+        <div>
+            <h3>Treasure Per Cast</h3>
+            <p>Increases treasure per cast by +1<br>Cost: <span id = "perClickCost">10</span> cash</p>
+            <p>Owned: <span id="trashPerClickOwned">0</span></p>
+            <button id="buyTrashPerClickBtn">Buy</button>
+        </div>
+
+        <div>
+            <h3>Auto Treasure Fisher</h3>
+            <p>Collects treasure automatically every second<br>Cost: <span id = "autoFisherCost">50</span> cash</p>
+            <p>Owned: <span id="autoTrashFisherOwned">0</span></p>
+            <button id="buyAutoTrashFisherBtn">Buy</button>
+        </div>
+
+        <button id = "returnToGameBtn">back</button>
+    </div>
+    
+    <!-- inventory menu -->
+
+</body>
+
+<footer>
+    <hr>
+    <button id = "returnToMainBtn">return to main menu</button>
+    <br>
+    <a href = "/">return to main site</a>
+</footer>
+
+</html>

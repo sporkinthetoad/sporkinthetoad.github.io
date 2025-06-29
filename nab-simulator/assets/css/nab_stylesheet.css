@@ -1,0 +1,15 @@
+#mainMenu {
+    display: block;
+}
+
+#stats {
+    display: none;
+}
+
+#gameMenu {
+    display: none;
+}
+
+#upgradeMenu {
+    display: none
+}
