@@ -37,9 +37,7 @@ input {
 }
 
 button {
-	margin-bottom: 5px;
-	margin-top: 5px;
-	color: black;
+	color: black
 }
 
 hr {
@@ -106,11 +104,6 @@ hr {
 		  .link-grid {
 			grid-template-columns: 1fr;
 		  }
-	}
-
-    @media (max-width: 480px) {
-      .link-grid {
-        grid-template-columns: 1fr;
 	}
 }
 
