@@ -11,7 +11,8 @@ async function weather() {
 }
 
 async function haywire() {
-  return Math.random() < (0.02054794522 + 0.0002746) / 100; // chance of technology going haywire 
+    return Math.random() < (0.02054794522 + 0.0002746) / 100; // chance of technology going haywire
+    //this is a very scientific measurement
 }
 
 async function generate() {
@@ -49,8 +50,8 @@ function broadsheet(){
     let status = document.getElementById("status");
     for (let i of elements) {
         
-        i.style.letterSpacing = "0px"
-        const natural_text_width = i.getBoundingClientRect().width
+        i.style.letterSpacing = "30px"
+        const natural_text_width = i.style.letterSpacing 
 
         let spacing = (window.innerWidth - natural_text_width) / 2;
         i.style.letterSpacing = spacing + "px";

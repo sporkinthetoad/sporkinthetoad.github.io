@@ -22,7 +22,6 @@ a {
 }
 
 
-
 a:hover {
 	text-decoration: underline;
 	color: #FFFF51;
@@ -155,7 +154,7 @@ hr {
     }
 	
 	.true-center a {
-		color: #0077cc;
+		color: #4B7F52;
 		text-decoration: none;
 		font-size: 1.2rem;
     }
