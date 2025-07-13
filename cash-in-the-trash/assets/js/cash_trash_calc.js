@@ -3,7 +3,7 @@ var output = document.getElementById("demo");
 let change = 0
 let certificate = document.createElement("h2");
 let img = document.createElement("img");
-img.src = "../assets/images/cash-in-the-trash/bin.png";
+img.src = "assets/images/bin.png";
 let footer = document.querySelector("footer");
 
 output.innerHTML = slider.value;
